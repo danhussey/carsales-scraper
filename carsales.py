@@ -13,7 +13,7 @@ from selenium import webdriver
 
 # Get the html from the page using a Selenium webdriver (Chrome)
 url = 'https://www.carsales.com.au/cars/'
-driver = webdriver.Chrome(executable_path="/Users/danielhussey/Code/carsales-scraper/chromedriver")
+driver = webdriver.Chrome(executable_path="./chromedriver")
 r = driver.get(url)
 html = driver.page_source
 driver.quit()
